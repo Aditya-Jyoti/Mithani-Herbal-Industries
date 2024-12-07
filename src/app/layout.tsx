@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import Navbar from "@/app/components/Navbar";
+
 export const metadata: Metadata = {
   title: "Mithani Herbal Industries",
   description:
-    "Mithani Herbal Industries, offering premium tobacco-free and nicotine-free paan masala alternatives. Immerse in a vibrant digital experience with an interactive bot guiding you through our sustainable process, natural ingredients, and a range of wellness-focused products. Switch to a healthier lifestyle with our flavorful, gut-friendly alternatives that promote a cleaner and greener India.",
+    "Experience the freshness of natural ingredients with Mithani Herbal Industries' tobacco-free paan masala alternatives. Join the journey towards a healthier lifestyle.",
 };
 
 export default function RootLayout({
@@ -14,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-background font-body">{children}</body>
+      <body className="bg-background font-body">
+        <nav>
+          <Navbar />
+        </nav>
+
+        {children}
+      </body>
     </html>
   );
 }
