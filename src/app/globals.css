@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8ecd3;
+  --foreground: #161004;
+  --primary: #3f422e;
+  --secondary: #d78b30;
+  --tertiary: #9f886f;
+}
+
+@font-face {
+  font-family: "new_spiritmedium_condensed";
+  src: url("/fonts/newspirit-mediumcondensed-webfont.woff2") format("woff2"),
+    url("/fonts/newspirit-mediumcondensed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
