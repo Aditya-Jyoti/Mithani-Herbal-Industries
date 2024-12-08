@@ -6,6 +6,9 @@
   --background: #f8ecd3;
   --foreground: #161004;
   --primary: #3f422e;
+  --primary-light1: #646949;
+  --primary-light2: #737854;
+  --primary-light3: #82875e;
   --secondary: #d78b30;
   --tertiary: #9f886f;
 }
@@ -16,4 +19,15 @@
     url("/fonts/newspirit-mediumcondensed-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+#left_arm_cloth,
+#left_arm_2,
+#left_arm_lining {
+  transform: translateY(4px);
 }
